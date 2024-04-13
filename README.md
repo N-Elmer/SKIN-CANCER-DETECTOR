@@ -72,6 +72,7 @@ The project folder structure consists of the following files and folders:
    - 📂 css: This subfolder contains the CSS stylesheets used for styling the web application, specifically the `styles.css` file.
 
    - 📂 js: This subfolder contains the JavaScript files used for the web application's functionality, including the `script.js` files.
+   - 📂 images: This subfolder contains the image files used for the web application's frontend, including the `header-image.jpg` file.
 
 - 📂 templates: This folder contains the HTML templates used for rendering the web pages, specifically the `index.html` and the `result.html` file.
 
