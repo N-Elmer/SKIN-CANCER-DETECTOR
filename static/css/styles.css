@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    background-color: #000032;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.result-container {
+    margin-top: 30px;
+}
+
+.result-label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.result-value {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+}
+
+.header-image-frame {
+    position: relative;
+    height: 0;
+    padding-top: 30%;
+    overflow: hidden;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.header-image:hover {
+    transform: scale(1.05);
+}
+
+/* Add these styles for the footer */
+footer {
+    background-color: #04045c;
+    color: white;
+    padding: 40px;
+    margin-right: -20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .developer {
+    font-size: 16px;
+  }
+  
+  /* Adjust the font and size according to your preference */
+  .developer,
+  .footer-content,
+  .footer-content a {
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    min-height: 100vh; /* Add this to ensure the body fills the entire viewport height */
+    display: flex;
+    flex-direction: column; /* Set the flex container to column direction */
+    justify-content: space-between; /* Add space between header, content, and footer */
+    background-color: #000032;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper {
+    flex: 1; /* Allow the wrapper to take remaining vertical space */
+    display: flex;
+    flex-direction: column; /* Set the wrapper as a flex container with column direction */
+}

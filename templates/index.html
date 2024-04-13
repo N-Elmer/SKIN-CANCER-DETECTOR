@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CANCER DETECTOR</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-image-frame">
+                <img src="static/images/header-image.jpg" alt="Header Image" class="header-image">
+            </div>
+        </header>
+        <main class="content">
+            <div class="upload-btn-wrapper">
+                <h1>VERIFY CANCER STATUS</h1>
+                <button class="btn">UPLOAD IMAGE</button>
+                <input type="file" name="file" accept=".jpg, .jpeg, .png">
+            </div>
+            <div class="result-container" id="result-container" style="display: none;">
+                <p class="result-label">PREDICTION</p>
+                <p class="result-value" id="result-value"></p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="developer">
+                DEVELOPED BY N.ELMER
+            </div>
+            <div class="copyright">
+              &#169; <span id="copyright-year"></span> CANCER DETECTOR. All RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year dynamically in the copyright section
+        const currentYear = new Date().getFullYear();
+        document.getElementById("copyright-year").textContent = currentYear;
+    </script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
