@@ -5,6 +5,7 @@ SKIN-CANCER-DETECTOR is a web application that detects malignant and benign skin
 
 ## Folder Structure
 
+```
 📂 SKIN-CANCER-DETECTOR
    
    |
@@ -58,6 +59,7 @@ SKIN-CANCER-DETECTOR is a web application that detects malignant and benign skin
    ├── 📄 app.py
    
    └── 📄 requirements.txt
+```
 
 The project folder structure consists of the following files and folders:
 
