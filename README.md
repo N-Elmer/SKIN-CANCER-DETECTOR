@@ -1,7 +1,7 @@
 # SKIN-CANCER-DETECTOR
 SKIN CANCER 🔬🧪DETECTION SYSTEM
 
-SKIN-CANCER-DETECTOR is a web application that detects malignant and benign skin cancer. It leverages computer vision and image recognition techniques to determine if a patient has skin cancer or not. The application offers a friendly and intuitive web interface for users who are non technical to easily use the AI.
+SKIN-CANCER-DETECTOR is a web application that detects malignant and benign skin cancer. It leverages computer vision and image recognition techniques to determine whether a patient has skin cancer and to what extent the cancer has developed. The application offers a friendly and intuitive web interface for non-technical users to easily use the AI.
 
 ## Folder Structure
 
@@ -136,4 +136,4 @@ If the problem persists, feel free to open an issue in the GitHub repository for
 
 ---
 
-This README file provides an overview of the FOOT-FORECASTER web application, its folder structure, usage instructions, code explanation, and troubleshooting tips. Use it as a guide to understand and utilize the SKIN-CANCER-DETECTOR app.
+This README file provides an overview of the SKIN-CANCER-DETECTOR web application, its folder structure, usage instructions, code explanation, and troubleshooting tips. Use it as a guide to understand and utilize the SKIN-CANCER-DETECTOR app.
