@@ -1,5 +1,8 @@
-tensorflow
-keras
-scikit-learn
-matplotlib
-numpy
+Flask==2.3.2
+Werkzeug==2.3.2
+numpy==1.24.3
+pandas==1.5.3
+matplotlib==3.7.1
+tensorflow==2.12.0
+keras==2.12.0
+Pillow==9.4.0

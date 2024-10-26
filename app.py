@@ -1,11 +1,12 @@
 import os
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 from flask import Flask, request, render_template
 from werkzeug.utils import secure_filename
-from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import tensorflow as tf
+from keras.models import Sequential, load_model
+from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from PIL import Image
 
 app = Flask(__name__)
@@ -20,21 +21,32 @@ def load_or_train_model():
         image_size = (128, 128)
         batch_size = 32
 
+        train_csv = 'datasets/train.csv'
+        test_csv = 'datasets/test.csv'
         train_folder = 'datasets/train'
         test_folder = 'datasets/test'
+
+        train_df = pd.read_csv(train_csv)
+        test_df = pd.read_csv(test_csv)
 
         train_data_generator = ImageDataGenerator(rescale=1./255)
         test_data_generator = ImageDataGenerator(rescale=1./255)
 
-        train_generator = train_data_generator.flow_from_directory(
-            train_folder,
+        train_generator = train_data_generator.flow_from_dataframe(
+            dataframe=train_df,
+            directory=train_folder,
+            x_col='filename',
+            y_col='label',
             target_size=image_size,
             batch_size=batch_size,
             class_mode='binary'
         )
 
-        test_generator = test_data_generator.flow_from_directory(
-            test_folder,
+        test_generator = test_data_generator.flow_from_dataframe(
+            dataframe=test_df,
+            directory=test_folder,
+            x_col='filename',
+            y_col='label',
             target_size=image_size,
             batch_size=batch_size,
             class_mode='binary',
@@ -67,7 +79,7 @@ def load_or_train_model():
         )
 
         # Save the trained model
-        model.save(saved_model_path)
+        model.save(saved_model_path, save_format='tf')
 
     return model
 

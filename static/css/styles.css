@@ -93,6 +93,13 @@ footer {
     color: white;
     padding: 40px;
     margin-right: -20px;
+    position: relative;
+    height: 0;
+    /* padding-bottom: 30%; */
+    overflow: hidden;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
   }
   
   .footer-content {
@@ -113,7 +120,7 @@ footer {
   }
 
   body {
-    min-height: 100vh; /* Add this to ensure the body fills the entire viewport height */
+    min-height: 95vh; /* Add this to ensure the body fills the entire viewport height */
     display: flex;
     flex-direction: column; /* Set the flex container to column direction */
     justify-content: space-between; /* Add space between header, content, and footer */
@@ -123,6 +130,8 @@ footer {
     margin: 0;
     padding: 20px;
     text-align: center;
+    height: 0;
+    position: relative;
 }
 
 .wrapper {
