@@ -1,5 +1,5 @@
 # SKIN-CANCER-DETECTOR
-SKIN CANCER 🔬🧪DETECTION SYSTEM
+SKIN CANCER 🔬🧪 DETECTION SYSTEM
 
 SKIN-CANCER-DETECTOR is a web application that detects malignant and benign skin cancer. It leverages computer vision and image recognition techniques to determine whether a patient has skin cancer and to what extent the cancer has developed. The application offers a friendly and intuitive web interface for non-technical users to easily use the AI.
 
@@ -126,7 +126,7 @@ If you encounter any issues or errors while using the SKIN-CANCER-DETECTOR web a
 
 - Ensure that you have Python installed on your system, and the required dependencies are installed by running `pip install -r requirements.txt`.
 
-- Verify that the data files are located in the `datasets` folder.
+- Verify that the image data files are located in the `datasets` folder.
 
 - If you encounter any issues with the machine learning models, make sure you have successfully preprocessed the data and trained the models using the provided Jupyter Notebook files (`CancerDetector.ipynb`).
 
